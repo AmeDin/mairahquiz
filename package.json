@@ -4,17 +4,19 @@
   "description": "App for mairah quiz and scavage hunt",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix umairahquiz",
+    "client-install": "npm install --prefix quiz",
     "start": "node server.js",
     "server": "node server.js",
-    "client": "npm start --prefix umairahquiz",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix umairahquiz && npm run build --prefix umairahquiz"
+    "client": "npm start --prefix quiz",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix quiz && npm run build --prefix quiz"
   },
   "author": "Amir",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "concurrently": "^6.0.0",
+    "config": "^3.3.6",
+    "create-react-app": "^4.0.3",
     "express": "^4.17.1",
     "mongoose": "^5.12.0"
   },
