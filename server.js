@@ -30,10 +30,10 @@ app.use('/api/confession', require('./routes/confession'));
 // Serve static assets if in production
 if(process.env.NODE_ENV === 'production'){
     // Set static folder
-    app.use(express.static('confession/build'));
+    app.use(express.static('mairahquiz/build'));
 
     app.get('*', (req, res) => {
-        res.sendfile(path.resolve(__dirname, 'confession', 'build', 'index.html'));
+        res.sendfile(path.resolve(__dirname, 'mairahquiz', 'build', 'index.html'));
     });
 }
 
